@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "a8389288-6a46-46ac-9561-05ac1b0ce04e",
+            "Value": {
+                "id": "fa1e52f5-85b2-46c6-910f-afdba4aba166",
+                "resourcePath": "sprites\\spr_antares_test\\spr_antares_test.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "f751d4d7-74f5-46d5-ab01-5cf46e01b09e",
