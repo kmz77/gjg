@@ -135,11 +135,27 @@
             }
         },
         {
+            "Key": "887aa3e1-a379-4511-a521-627745699ecf",
+            "Value": {
+                "id": "52e33e11-f7ec-4909-b275-e47fe3f7eec5",
+                "resourcePath": "sprites\\s_ammo1\\s_ammo1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8bbbc7c8-2e6b-4706-a01d-49def372409f",
             "Value": {
                 "id": "231ba239-0fdf-42e7-82dd-8e7dd580e9c0",
                 "resourcePath": "views\\8bbbc7c8-2e6b-4706-a01d-49def372409f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "92990188-ca8b-444b-b0ef-dd01b0b58d39",
+            "Value": {
+                "id": "4fd770d0-fc0c-4082-b4b5-f8284d025a7e",
+                "resourcePath": "sprites\\s_ammo2\\s_ammo2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
