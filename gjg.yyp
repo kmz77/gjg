@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "17ec4b85-f64f-4d68-8cf8-c7edd98a2a9f",
+            "Value": {
+                "id": "628df6dc-b916-4549-a35d-700d63699bd3",
+                "resourcePath": "sprites\\spr_player_running\\spr_player_running.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1cfea57c-4558-457d-bffc-63f31c55f9ac",
             "Value": {
                 "id": "12aec44d-ab4f-4d4a-8031-02690cd19074",
@@ -68,6 +76,14 @@
                 "id": "a1cb85de-c23e-4882-9735-e1660adaf451",
                 "resourcePath": "views\\2c732733-0167-4474-9c2c-8e7162966b69.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3058920b-cd49-4af0-807e-8ac6ea9d627c",
+            "Value": {
+                "id": "c78e662e-ce6c-4547-a3bb-37cd434a2cf3",
+                "resourcePath": "sprites\\spr_player_idle\\spr_player_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -124,6 +140,14 @@
                 "id": "75584057-f95a-499a-b073-09b5a28ae4d6",
                 "resourcePath": "views\\82a1518c-ba28-496f-ad38-2bb15b08fe30.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "82db20af-a398-4dd2-bb4c-cebeb12963c1",
+            "Value": {
+                "id": "a228f74d-afc1-43ea-b349-2aeb1044056a",
+                "resourcePath": "tilesets\\tileset0\\tileset0.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -228,14 +252,6 @@
                 "id": "fa51fab8-40d0-4ea2-8c8b-aaa58c67e880",
                 "resourcePath": "views\\d4c8cd67-6009-4c90-8847-d74cf5012fab.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "dad00fdc-64bc-407c-8a75-d8edd8dd0b91",
-            "Value": {
-                "id": "c7fb8afc-987c-4887-ad33-1497004fa59d",
-                "resourcePath": "tilesets\\tileset0\\tileset0.yy",
-                "resourceType": "GMTileSet"
             }
         },
         {
