@@ -178,7 +178,7 @@
             "Key": "afe1a980-e70f-4aec-9169-2d76b4bbb586",
             "Value": {
                 "id": "df7c9236-a41d-47e6-a187-680987c190d0",
-                "resourcePath": "sprites\\tileset1\\tileset1.yy",
+                "resourcePath": "sprites\\spr_tileset\\spr_tileset.yy",
                 "resourceType": "GMSprite"
             }
         },
