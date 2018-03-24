@@ -10,3 +10,8 @@ enum states
 state = states.idle;
 hsp = 0;
 vsp = 0;
+acc = 0.5;
+
+
+
+
