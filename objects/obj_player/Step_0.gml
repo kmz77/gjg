@@ -53,36 +53,36 @@ switch(state)
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//player movement
-var x_input = keyboard_check(vk_right) - keyboard_check(vk_left);
-var y_input = keyboard_check(vk_down) - keyboard_check(vk_up);
+////player movement
+//var x_input = keyboard_check(vk_right) - keyboard_check(vk_left);
+//var y_input = keyboard_check(vk_down) - keyboard_check(vk_up);
 
-hsp += x_input * acc;
-vsp += y_input * acc;
+//hsp += x_input * acc;
+//vsp += y_input * acc;
 
-if (x_input == 0)
-{
-	hsp = lerp(hsp, 0, 0.3);
-}
+//if (x_input == 0)
+//{
+//	hsp = lerp(hsp, 0, 0.3);
+//}
 
-if (y_input == 0)
-{
-	vsp = lerp(vsp, 0, 0.3);
-}
+//if (y_input == 0)
+//{
+//	vsp = lerp(vsp, 0, 0.3);
+//}
 
-//this is for the animation
-if (x_input == 0 && y_input == 0)
-{
-	image_speed = 0;
-	image_index = 0;
-} else image_speed = 0.7;
+////this is for the animation
+//if (x_input == 0 && y_input == 0)
+//{
+//	image_speed = 0;
+//	image_index = 0;
+//} else image_speed = 0.7;
 
 //left and right detection collision
 x += hsp;
 
 if (hsp > 0)
 {
-	if grid_place_meeting(self, o_level.grid)
+	if grid_place_meeting(self, obj_level.grid)
 	{
 		x = bbox_right&~(CELL_WIDTH-1);
 		x -= bbox_right-x;
@@ -90,7 +90,7 @@ if (hsp > 0)
 	}
 	else if (hsp < 0)
 	{
-		if grid_place_meeting(self, o_level.grid)
+		if grid_place_meeting(self, obj_level.grid)
 		{
 			x = bbox_left&~(CELL_WIDTH-1);
 			x += CELL_WIDTH + x - bbox_left;
@@ -106,7 +106,7 @@ y = vsp;
 
 if (vsp > 0)
 {
-	if (grid_place_meeting(self, o_level.grid))
+	if (grid_place_meeting(self, obj_level.grid))
 	{
 		y = bbox_bottom&~(CELL_HEIGHT);
 		y -= bbox_bottom-y;
@@ -114,7 +114,7 @@ if (vsp > 0)
 	}
 }	else if (vsp < 0)
 	{
-		if (grid_place_meeting(self, o_level.grid))
+		if (grid_place_meeting(self, obj_level.grid))
 		{
 			y = bbox_top&~(CELL_HEIGHT-1)
 			y += CELL_HEIGHT + y - bbox_top;

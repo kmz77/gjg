@@ -1,8 +1,8 @@
 {
-    "id": "a028b603-850b-41fd-a4e7-c394c11086bd",
+    "id": "4bacbe2e-2c75-4001-af42-f03971ee754d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "grid_place_collision",
+    "name": "grid_place_meeting",
     "IsCompatibility": false,
     "IsDnD": false
 }

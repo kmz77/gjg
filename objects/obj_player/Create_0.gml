@@ -13,5 +13,5 @@ vsp = 0;
 acc = 0.5;
 
 
-instance_create_layer(x, y, "Instances", o_camera);
+
 
