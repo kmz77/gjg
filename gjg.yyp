@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0bdcbc35-d9ca-4437-8820-49d21622ea04",
+            "Value": {
+                "id": "1144c6bf-b788-4a34-9408-d2e066bf273c",
+                "resourcePath": "sprites\\spr_crossbow\\spr_crossbow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0fc8eff8-45b1-43b6-b694-e31bfe3b4710",
             "Value": {
                 "id": "9c98cdff-c459-410e-814b-54874947e0cf",
