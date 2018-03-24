@@ -1,5 +1,12 @@
 /// @description Initialize variables
 
-image_speed = 0.1;
+spd = 2;
 
-spd = 3;
+enum states
+{
+	idle,
+	running
+}
+state = states.idle;
+hsp = 0;
+vsp = 0;
