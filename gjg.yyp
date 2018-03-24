@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "8f20cac1-9cb1-48c4-be5b-8bdf6bba9f3b",
+            "Value": {
+                "id": "27962e1d-1219-4714-9ece-f4d350a3a76e",
+                "resourcePath": "sprites\\spr_frog_running\\spr_frog_running.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "92990188-ca8b-444b-b0ef-dd01b0b58d39",
             "Value": {
                 "id": "4fd770d0-fc0c-4082-b4b5-f8284d025a7e",
