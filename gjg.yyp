@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "9a17c7cc-5ccb-459a-bb02-8f476bd97b39",
+            "Value": {
+                "id": "c8b049db-8371-422c-8516-c6b7a95ebcfd",
+                "resourcePath": "sprites\\spr_arrow\\spr_arrow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "f751d4d7-74f5-46d5-ab01-5cf46e01b09e",
