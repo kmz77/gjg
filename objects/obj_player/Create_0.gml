@@ -10,3 +10,6 @@ enum states
 state = states.idle;
 hsp = 0;
 vsp = 0;
+
+instance_create_layer(x, y, "Instances", obj_camera);
+
