@@ -82,7 +82,7 @@ x += hsp;
 
 if (hsp > 0)
 {
-	if grid_place_meeting(self, obj_level.grid)
+	if grid_place_meeting(self, o_level.grid)
 	{
 		x = bbox_right&~(CELL_WIDTH-1);
 		x -= bbox_right-x;
@@ -90,7 +90,7 @@ if (hsp > 0)
 	}
 	else if (hsp < 0)
 	{
-		if grid_place_meeting(self, obj_level.grid)
+		if grid_place_meeting(self, o_level.grid)
 		{
 			x = bbox_left&~(CELL_WIDTH-1);
 			x += CELL_WIDTH + x - bbox_left;
@@ -106,7 +106,7 @@ y = vsp;
 
 if (vsp > 0)
 {
-	if (grid_place_meeting(self, obj_level.grid))
+	if (grid_place_meeting(self, o_level.grid))
 	{
 		y = bbox_bottom&~(CELL_HEIGHT);
 		y -= bbox_bottom-y;
@@ -114,7 +114,7 @@ if (vsp > 0)
 	}
 }	else if (vsp < 0)
 	{
-		if (grid_place_meeting(self, obj_level.grid))
+		if (grid_place_meeting(self, o_level.grid))
 		{
 			y = bbox_top&~(CELL_HEIGHT-1)
 			y += CELL_HEIGHT + y - bbox_top;
