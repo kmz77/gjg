@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "dad39e9b-ec6f-4c27-bf40-6d41ccd62a1f",
+            "Value": {
+                "id": "1d697802-da4c-4d39-8c26-33325f5eb857",
+                "resourcePath": "scripts\\round_n\\round_n.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "dafd5b37-be8b-4806-a31e-8a476d69d04c",
             "Value": {
                 "id": "31af3cb9-d294-48c0-af4b-c146bd6341ac",
@@ -429,6 +437,14 @@
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
             }
+        },
+        {
+            "Key": "fcc6853c-884e-4dc8-bfb8-b178b1298a76",
+            "Value": {
+                "id": "95087a9b-0164-410f-b7bb-9d335ff77a84",
+                "resourcePath": "objects\\obj_camera\\obj_camera.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "script_order": [
@@ -439,7 +455,8 @@
         "93a7b3a2-99c4-417a-a97c-04abc513180c",
         "f1305a95-c9c0-4318-986d-960d43beeefb",
         "8d26f4f7-10a1-4b8f-a9cc-4fe8b0a1618c",
-        "4bacbe2e-2c75-4001-af42-f03971ee754d"
+        "4bacbe2e-2c75-4001-af42-f03971ee754d",
+        "dad39e9b-ec6f-4c27-bf40-6d41ccd62a1f"
     ],
     "tutorial": ""
 }

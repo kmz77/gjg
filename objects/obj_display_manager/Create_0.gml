@@ -1,7 +1,7 @@
 /// @description Initialize display properties
 fullscreen = false;
-default_scale = 2;
 max_scale = 1;
+default_scale = 2;
 scale = default_scale;
 
 ideal_width = 0;
@@ -39,11 +39,11 @@ surface_resize(application_surface,ideal_width*scale,ideal_height*scale);
 
 alarm[0] = 1;
 
-// Set up the camera
-camera = camera_create();
-camera_set_view_size(camera,ideal_width,ideal_height);
-camera_set_view_target(camera,obj_player);
-camera_set_view_border(camera,0.5*ideal_width-32,0.5*ideal_height-32);
-camera_set_view_speed(camera,-1,-1);
+// Set up view variables
+globalvar view_x,view_y,view_w,view_h;
+view_x = 0;
+view_y = 0;
+view_w = ideal_width;
+view_h = ideal_height
 
 room_goto_next();
