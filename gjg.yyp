@@ -303,19 +303,19 @@
             }
         },
         {
+            "Key": "97595784-6425-4c6d-b661-6330fddbef6a",
+            "Value": {
+                "id": "2d842ab4-d07d-4a39-a229-5a6539c34c2f",
+                "resourcePath": "sprites\\spr_arrow\\spr_arrow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "98938159-af3e-48bc-bbf2-468271cfb13c",
             "Value": {
                 "id": "c1bb6e6d-48c5-4075-963e-0ab1e723b33f",
                 "resourcePath": "rooms\\rm_init\\rm_init.yy",
                 "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "9a17c7cc-5ccb-459a-bb02-8f476bd97b39",
-            "Value": {
-                "id": "c8b049db-8371-422c-8516-c6b7a95ebcfd",
-                "resourcePath": "sprites\\spr_arrow\\spr_arrow.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
