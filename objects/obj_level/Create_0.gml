@@ -19,6 +19,7 @@ var controller_y = height  div 2;
 var controller_direction = irandom(3);
 var steps = 400;
 
+//creating the player obj in the room
 var player_start_x = controller_x * CELL_WIDTH + CELL_WIDTH/2;
 var player_start_y = controller_y * CELL_HEIGHT + CELL_HEIGHT/2;
 instance_create_layer(player_start_x, player_start_y, "Instances", obj_player);
@@ -66,13 +67,10 @@ for (var _y = 1; _y < height - 1; _y++)
 			var east_tile = grid[# _x+1, _y] == VOID;
 			var south_tile = grid[# _x, _y+1] == VOID;
 			
-			var tile_index = NORTH* north_tile + WEST* west_tile + EAST* east_tile + SOUTH* south_tile + 1;
-			if (tile_index == 1)
-			{
+			var tile_index = NORTH*north_tile + WEST*west_tile + EAST*east_tile + SOUTH*south_tile + 1;
+			if (tile_index == 1) {
 				grid[# _x, _y] = FLOOR;
 			}
-			
-			
 		}
 	}
 }
@@ -89,10 +87,9 @@ for (var _y = 1; _y < height - 1; _y++)
 			var east_tile = grid[# _x+1, _y] == VOID;
 			var south_tile = grid[# _x, _y+1] == VOID;
 			
-			var tile_index = NORTH* north_tile + WEST* west_tile + EAST* east_tile + SOUTH* south_tile + 1;
-			tilemap_set(wall_map_id,tile_index, _x, _y);
-			
-			
+			var tile_index = NORTH*north_tile + WEST*west_tile + EAST*east_tile + SOUTH*south_tile + 1;
+			tilemap_set(wall_map_id, tile_index, _x, _y);
 		}
 	}
 }
+
