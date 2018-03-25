@@ -1,10 +1,12 @@
 /// @description Player controls
 
-//// Get inputs
-//var left = -keyboard_check(ord("A"));
-//var right = keyboard_check(ord("D"));
-//var up = -keyboard_check(ord("W"));
-//var down = keyboard_check(ord("S"));
+// Get inputs
+var mx = mouse_x;
+var my = mouse_y;
+var left = -keyboard_check(ord("A"));
+var right = keyboard_check(ord("D"));
+var up = -keyboard_check(ord("W"));
+var down = keyboard_check(ord("S"));
 
 //var hdir = left + right;
 //var vdir = up + down;
@@ -20,20 +22,19 @@
 //		hsp = 0;
 //		vsp = 0;
 		
-//		// Change state
-//		if (hdir != 0) || (vdir != 0)
-//		{
-//			sprite_index = spr_player_running;
-//			state = states.running;
-//		}
-//		#endregion
-//	} break;
-//	case states.running:
-//	{
-//		#region
-//		// Animation
-//		sprite_index = spr_player_running;
-//		if (hdir != 0) image_xscale = hdir;
+		// Change state
+		if (hdir != 0) || (vdir != 0)
+		{
+			sprite_index = spr_player_running;
+			state = states.running;
+		}
+		#endregion
+	} break;
+	case states.running:
+	{
+		#region
+		// Animation
+		sprite_index = spr_player_running;
 		
 //		// Moving
 //		hsp = hdir*spd;
@@ -42,18 +43,21 @@
 //		x += hsp;
 //		y += vsp;
 		
-//		// Change state
-//		if (hdir == 0) && (vdir == 0)
-//		{
-//			sprite_index = spr_player_idle;
-//			state = states.idle;
-//		}
-//		#endregion
-//	} break;
-//}
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// Change state
+		if (hdir == 0) && (vdir == 0)
+		{
+			sprite_index = spr_player_idle;
+			state = states.idle;
+		}
+		#endregion
+	} break;
+}
 
-//player movement
+// Set image_xscale
+if (mx > x + 5) image_xscale = 1;
+else if (mx < x - 5) image_xscale = -1;
+
+/*//player movement
 var x_input = keyboard_check(vk_right) - keyboard_check(vk_left);
 var y_input = keyboard_check(vk_down) - keyboard_check(vk_up);
 
@@ -88,7 +92,7 @@ if (x_input == 0 && y_input == 0)
 
 
 //left and right detection collision
-x += hsp;
+/*x += hsp;
 
 if (hsp > 0)
 	image_xscale = 1;
