@@ -3,12 +3,10 @@
 // Get inputs
 var mx = mouse_x;
 var my = mouse_y;
-
 var left = -keyboard_check(ord("A"));
 var right = keyboard_check(ord("D"));
 var up = -keyboard_check(ord("W"));
 var down = keyboard_check(ord("S"));
-var click = device_mouse_check_button_pressed(0,mb_left);
 
 //var hdir = left + right;
 //var vdir = up + down;
@@ -23,9 +21,6 @@ var click = device_mouse_check_button_pressed(0,mb_left);
 //		sprite_index = spr_player_idle;
 //		hsp = 0;
 //		vsp = 0;
-		
-		// Shooting
-		scr_player_shoot();
 		
 		// Change state
 		if (hdir != 0) || (vdir != 0)
