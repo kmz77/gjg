@@ -1,6 +1,8 @@
 /// @description Player controls
 
 // Get inputs
+var mx = mouse_x;
+var my = mouse_y;
 var left = -keyboard_check(ord("A"));
 var right = keyboard_check(ord("D"));
 var up = -keyboard_check(ord("W"));
@@ -33,7 +35,6 @@ switch(state)
 		#region
 		// Animation
 		sprite_index = spr_player_running;
-		if (hdir != 0) image_xscale = hdir;
 		
 		// Moving
 		hsp = hdir*spd;
@@ -51,6 +52,11 @@ switch(state)
 		#endregion
 	} break;
 }
+
+// Set image_xscale
+if (mx > x + 5) image_xscale = 1;
+else if (mx < x - 5) image_xscale = -1;
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ////player movement
