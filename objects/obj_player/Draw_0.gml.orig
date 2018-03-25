@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /// @description Draw the weapon
 
 draw_self();
@@ -38,3 +39,7 @@ else
 	draw_self();
 	draw_sprite_ext(spr_gun,0,x+image_xscale*7,y-6-offset,xscale,1,draw_rot,c_white,1);
 }
+=======
+/// @description Draw the weapon
+
+>>>>>>> 4887fba2ced150289ddac3d02fc172b55eb2daa0

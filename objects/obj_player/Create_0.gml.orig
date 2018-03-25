@@ -1,0 +1,41 @@
+///// @description Initialize variables
+
+<<<<<<< HEAD
+////spd = 2;
+
+////enum states
+////{
+////	idle,
+////	running
+////}
+////state = states.idle;
+////hsp = 0;
+////vsp = 0;
+////acc = 0.5;
+
+//kmz vars
+=======
+spd = 2;
+cooldown = room_speed*0.25;
+
+enum states
+{
+	idle,
+	running
+}
+
+state = states.idle;
+>>>>>>> 4887fba2ced150289ddac3d02fc172b55eb2daa0
+hsp = 0;
+vsp = 0;
+max_speed = 3;
+acc = 0.5;
+<<<<<<< HEAD
+
+
+
+
+
+=======
+shoot_timer = 0;
+>>>>>>> 4887fba2ced150289ddac3d02fc172b55eb2daa0
