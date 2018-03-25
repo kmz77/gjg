@@ -60,6 +60,15 @@ var y_input = keyboard_check(vk_down) - keyboard_check(vk_up);
 hsp += x_input * acc;
 vsp += y_input * acc;
 
+var _speed = point_distance(0, 0, hsp, vsp);
+var _direction = point_direction(0, 0, hsp, vsp);
+
+if (_speed > max_speed)
+{
+	hsp = lengthdir_x(max_speed, _direction);
+	vsp = lengthdir_y(max_speed, _direction);
+}
+
 if (x_input == 0)
 {
 	hsp = lerp(hsp, 0, 0.3);
@@ -77,10 +86,12 @@ if (x_input == 0 && y_input == 0)
 	image_index = 0;
 } else image_speed = 0.7;
 
+
 //left and right detection collision
 x += hsp;
 
 if (hsp > 0)
+	image_xscale = 1;
 {
 	if grid_place_meeting(self, obj_level.grid)
 	{
@@ -89,7 +100,7 @@ if (hsp > 0)
 		hsp = 0;
 	}
 	else if (hsp < 0)
-	{
+	{	image_xscale = -1;
 		if grid_place_meeting(self, obj_level.grid)
 		{
 			x = bbox_left&~(CELL_WIDTH-1);
