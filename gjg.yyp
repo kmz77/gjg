@@ -423,6 +423,14 @@
             }
         },
         {
+            "Key": "e629fd5f-d0af-4681-bc0e-a7e86039723f",
+            "Value": {
+                "id": "e45d6618-8e27-4531-acd1-2b674ea98a6e",
+                "resourcePath": "sprites\\spr_scrapcrate\\spr_scrapcrate.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e76fc1f3-6da0-499e-9930-c172966beca6",
             "Value": {
                 "id": "f1e72a09-a1c9-4ea2-acfc-0783476c6941",
