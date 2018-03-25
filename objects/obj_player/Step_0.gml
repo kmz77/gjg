@@ -78,7 +78,7 @@ switch(state)
 //} else image_speed = 0.7;
 
 //left and right detection collision
-x += hsp;
+/*x += hsp;
 
 if (hsp > 0)
 {

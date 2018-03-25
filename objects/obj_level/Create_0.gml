@@ -11,6 +11,7 @@ height = room_height div CELL_HEIGHT;
 //this line creates the grid
 grid = ds_grid_create(width,height);
 ds_grid_set_region(grid, 0, 0, width, height, VOID);
+//ds_grid_set_region(grid, 2, 2, width-2, height-2, VOID);
 
 
 //we create the controller here
