@@ -11,7 +11,9 @@ height = room_height div CELL_HEIGHT;
 //this line creates the grid
 grid = ds_grid_create(width,height);
 ds_grid_set_region(grid, 0, 0, width, height, VOID);
-//ds_grid_set_region(grid, 2, 2, width-2, height-2, VOID);
+
+// Create the path grid
+grid_path = mp_grid_create(0,0,width,height,CELL_WIDTH,CELL_HEIGHT);
 
 
 //we create the controller here
@@ -72,8 +74,6 @@ for (var _y = 1; _y < height - 1; _y++)
 			{
 				grid[# _x, _y] = FLOOR;
 			}
-			
-			
 		}
 	}
 }
@@ -90,10 +90,20 @@ for (var _y = 1; _y < height - 1; _y++)
 			var east_tile = grid[# _x+1, _y] == VOID;
 			var south_tile = grid[# _x, _y+1] == VOID;
 			
+			mp_grid_add_cell(grid_path,_x,_y);
+			
 			var tile_index = NORTH* north_tile + WEST* west_tile + EAST* east_tile + SOUTH* south_tile + 1;
 			tilemap_set(wall_map_id,tile_index, _x, _y);
-			
-			
+		}
+		else
+		{
+			// Add enemies
+			var ex = _x*CELL_WIDTH + CELL_WIDTH/2;
+			var ey = _y*CELL_HEIGHT + CELL_HEIGHT/2;
+			if (point_distance(ex,ey,obj_player.x,obj_player.y) > 96) && (chance(0.07))
+			{
+				instance_create_layer(ex,ey,"Instances",obj_frog);
+			}
 		}
 	}
 }
