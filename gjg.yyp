@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "18ed0fd1-8170-41b4-b31c-0b3ab44602fc",
+            "Value": {
+                "id": "b738935e-61d1-435c-b879-fd6ba6042967",
+                "resourcePath": "sounds\\sound2\\sound2.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "1cfea57c-4558-457d-bffc-63f31c55f9ac",
             "Value": {
                 "id": "12aec44d-ab4f-4d4a-8031-02690cd19074",
@@ -244,6 +252,14 @@
                 "id": "f2dc67a3-8ba2-496e-a246-0c9e5e762cdf",
                 "resourcePath": "sprites\\spr_floor\\spr_floor.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7e742088-c3de-40b1-a026-bc38fea2c4fb",
+            "Value": {
+                "id": "a567852e-e448-4726-b070-0891f3634f6e",
+                "resourcePath": "sounds\\sound3\\sound3.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -423,6 +439,14 @@
             }
         },
         {
+            "Key": "cfd4dc07-b5e6-4da3-9ac9-158952462072",
+            "Value": {
+                "id": "f3638edc-f043-4ceb-9626-2889de5ae17c",
+                "resourcePath": "sounds\\sound1\\sound1.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "d0a72e6e-2983-48f5-812b-69338d9caf50",
             "Value": {
                 "id": "e98b065d-a45d-4fa5-a65c-49885641bbdc",
@@ -492,6 +516,14 @@
                 "id": "fb3e7c2c-6478-4a00-a073-6ac46b3122a3",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f897a26f-1cc0-4298-88b0-5f74039e4589",
+            "Value": {
+                "id": "aefa05f7-0353-4c3a-9ec6-49cebf80f210",
+                "resourcePath": "sounds\\sound0\\sound0.yy",
+                "resourceType": "GMSound"
             }
         },
         {
