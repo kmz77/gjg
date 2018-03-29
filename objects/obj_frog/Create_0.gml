@@ -4,6 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-spd = 1.5;
+cooldown = 0.5;
+spd = 2;
 spr_idle = spr_frog_idle;
 spr_running = spr_frog_running;

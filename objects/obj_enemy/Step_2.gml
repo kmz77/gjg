@@ -7,11 +7,11 @@ if (x == xprevious) && (y == yprevious)
 	sprite_index = spr_idle;
 }
 
-if x > xprevious
+if (x > xprevious) || (x == xprevious)
 {
 	image_xscale = 1;
 }
-if x < xprevious
+if (x < xprevious)
 {
 	image_xscale = -1;
 }
