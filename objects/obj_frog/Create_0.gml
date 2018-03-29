@@ -5,3 +5,5 @@
 event_inherited();
 
 spd = 1.5;
+spr_idle = spr_frog_idle;
+spr_running = spr_frog_running;
