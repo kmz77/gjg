@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_crate",
     "eventList": [
-        
+        {
+            "id": "c3c6ffd9-90ab-4a0f-8930-dc3a4b4143fc",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 3,
+            "m_owner": "0ef798bd-20cc-4297-a69c-59fed2c3d926"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

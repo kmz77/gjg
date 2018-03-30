@@ -100,7 +100,7 @@ for (var _y = 1; _y < height - 1; _y++)
 			var ex = _x*CELL_WIDTH + CELL_WIDTH/2;
 			var ey = _y*CELL_HEIGHT + CELL_HEIGHT/2;
 			// Spawn enemies
-			if (point_distance(ex,ey,obj_player.x,obj_player.y) > 96) && (chance(0.06))
+			if (point_distance(ex,ey,obj_player.x,obj_player.y) > 128) && (chance(0.06))
 			{
 				instance_create_layer(ex,ey,"Instances",obj_frog);
 			}
