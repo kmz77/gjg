@@ -1,6 +1,6 @@
 /// @description Set gun position
 gun_x = x + image_xscale*7
-gun_y = y - 6;
+gun_y = y - 9;
 
 if (sprite_index == spr_player_idle)
 {

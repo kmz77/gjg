@@ -28,7 +28,7 @@ switch(state)
 		if (click) && (shoot_timer == 0)
 		{
 			shoot_timer = cooldown;
-			with(instance_create_layer(gun_x + lengthdir_x(12,gun_rot),gun_y + lengthdir_y(12,gun_rot),"Instances",obj_bullet))
+			with(instance_create_layer(gun_x + lengthdir_x(16,gun_rot),gun_y + lengthdir_y(16,gun_rot),"Instances",obj_bullet))
 			{
 				dir = other.gun_rot;
 				dmg = other.dmg;
@@ -61,7 +61,7 @@ switch(state)
 		if (click) && (shoot_timer == 0)
 		{
 			shoot_timer = cooldown;
-			with(instance_create_layer(gun_x + lengthdir_x(12,gun_rot),gun_y + lengthdir_y(12,gun_rot),"Instances",obj_bullet))
+			with(instance_create_layer(gun_x + lengthdir_x(16,gun_rot),gun_y + lengthdir_y(16,gun_rot),"Instances",obj_bullet))
 			{
 				dir = other.gun_rot;
 				dmg = other.dmg;

@@ -20,10 +20,20 @@ instance_destroy();
 }
 
 with (obj_enemy) mask_index = msk_idle;
+
 if (instance_exists(self))
 {
 	if (grid_place_meeting(self,obj_level.grid))
 	{
-		instance_destroy();
+		var _x = x;
+		var _y = y;
+		x = xprevious;
+		y = yprevious;
+		if (grid_place_meeting(self,obj_level.grid))
+		{
+			instance_destroy();
+		}
+		x = _x;
+		y = _y;
 	}
 }

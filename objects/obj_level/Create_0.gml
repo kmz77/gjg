@@ -20,22 +20,27 @@ grid_path = mp_grid_create(0,0,width,height,CELL_WIDTH,CELL_HEIGHT);
 var controller_x = width  div 2;
 var controller_y = height  div 2;
 var controller_direction = irandom(3);
-var steps = 400;
+var steps = 450;
+var step = 0;
 
 var player_start_x = controller_x * CELL_WIDTH + CELL_WIDTH/2;
 var player_start_y = controller_y * CELL_HEIGHT + CELL_HEIGHT/2;
 instance_create_layer(player_start_x, player_start_y, "Instances", obj_player);
 
-var direction_change_odds = 1;
+var direction_change_odds = 0.7;
 
 repeat (steps)
 {
 	grid[# controller_x, controller_y] = FLOOR;
 	
 	//Randomize the direction
-	if (irandom(direction_change_odds) == direction_change_odds)
+	if (chance(direction_change_odds))
 	{
-		controller_direction = irandom(3);
+		var cd = controller_direction;
+		while (controller_direction == cd)
+		{
+			controller_direction = irandom(3);
+		}
 	}
 	
 	//move the controller
@@ -55,7 +60,7 @@ repeat (steps)
 	{
 		controller_y += - y_direction * 2;
 	}
-	
+	step ++;
 }
 
 for (var _y = 1; _y < height - 1; _y++)
@@ -100,7 +105,7 @@ for (var _y = 1; _y < height - 1; _y++)
 			var ex = _x*CELL_WIDTH + CELL_WIDTH/2;
 			var ey = _y*CELL_HEIGHT + CELL_HEIGHT/2;
 			// Spawn enemies
-			if (point_distance(ex,ey,obj_player.x,obj_player.y) > 128) && (chance(0.06))
+			if (point_distance(ex,ey,obj_player.x,obj_player.y) > 128) && (chance(0.09))
 			{
 				instance_create_layer(ex,ey,"Instances",obj_frog);
 			}
@@ -112,3 +117,4 @@ for (var _y = 1; _y < height - 1; _y++)
 		}
 	}
 }
+if (instance_number(obj_enemy) < 10) || (instance_number(obj_enemy) > 14) room_restart(); // clamp enemy amouunt
