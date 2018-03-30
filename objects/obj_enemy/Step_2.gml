@@ -6,12 +6,14 @@ if (x == xprevious) && (y == yprevious)
 {
 	sprite_index = spr_idle;
 }
-
-if (x > xprevious) || (x == xprevious)
+else
 {
-	image_xscale = 1;
-}
-if (x < xprevious)
-{
-	image_xscale = -1;
+	if (x > xprevious) || (x == xprevious)
+	{
+		image_xscale = 1;
+	}
+	if (x < xprevious)
+	{
+		image_xscale = -1;
+	}
 }

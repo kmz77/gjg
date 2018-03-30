@@ -24,6 +24,7 @@ if (x == other.x) && (y == other.y)
 			hsp = 0;
 		}
 	}
+	exit;
 }
 
 dir = point_direction(other.x,other.y,x,y)
