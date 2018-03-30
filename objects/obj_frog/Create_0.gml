@@ -5,8 +5,9 @@
 event_inherited();
 
 cooldown = 0.3;
-spd = 2.5;
-hp = 7;
+spd = 1.5;
+hp = 6;
+ab_to_shoot = true;
 
 msk_idle = spr_frog_idle;
 msk_hit = msk_frog;

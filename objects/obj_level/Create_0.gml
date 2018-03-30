@@ -27,7 +27,7 @@ var player_start_x = controller_x * CELL_WIDTH + CELL_WIDTH/2;
 var player_start_y = controller_y * CELL_HEIGHT + CELL_HEIGHT/2;
 instance_create_layer(player_start_x, player_start_y, "Instances", obj_player);
 
-var direction_change_odds = 0.7;
+var direction_change_odds = 0.9;
 
 repeat (steps)
 {

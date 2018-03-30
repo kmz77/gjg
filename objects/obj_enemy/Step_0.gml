@@ -1,5 +1,16 @@
-/// @description Die
+/// @description Enemy movement
 
+// Shooting
+if (shoot_timer == 0)
+{
+	shoot_timer = shoot_cooldown+irandom_range(-10,10);
+	with(instance_create_layer(x,y,"Bullets",obj_enemy_bullet))
+	{
+		dir = point_direction(x,y,obj_player.x,obj_player.y);
+	}
+}
+
+shoot_timer = approach(shoot_timer,0,1);
 if (hp <= 0) instance_destroy();
 
 

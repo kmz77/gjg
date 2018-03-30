@@ -1,3 +1,3 @@
 /// @description Set speed
 
-spd = 12;
+spd = 3;
