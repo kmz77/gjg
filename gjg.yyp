@@ -87,14 +87,6 @@
             }
         },
         {
-            "Key": "18ed0fd1-8170-41b4-b31c-0b3ab44602fc",
-            "Value": {
-                "id": "b738935e-61d1-435c-b879-fd6ba6042967",
-                "resourcePath": "sounds\\sound2\\sound2.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "1cfea57c-4558-457d-bffc-63f31c55f9ac",
             "Value": {
                 "id": "12aec44d-ab4f-4d4a-8031-02690cd19074",
@@ -271,14 +263,6 @@
             }
         },
         {
-            "Key": "7e742088-c3de-40b1-a026-bc38fea2c4fb",
-            "Value": {
-                "id": "a567852e-e448-4726-b070-0891f3634f6e",
-                "resourcePath": "sounds\\sound3\\sound3.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "82a1518c-ba28-496f-ad38-2bb15b08fe30",
             "Value": {
                 "id": "75584057-f95a-499a-b073-09b5a28ae4d6",
@@ -391,6 +375,14 @@
             }
         },
         {
+            "Key": "a94a6bff-e6e1-4a78-9c33-3f1893470cca",
+            "Value": {
+                "id": "45f5f35d-e0b2-4cef-ae5e-f85906f61a48",
+                "resourcePath": "sprites\\msk_frog\\msk_frog.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ac1e6f8f-5ac3-4d0d-b359-6d35060d1874",
             "Value": {
                 "id": "611b3af4-be50-480e-aad1-c8aa0c0e7bba",
@@ -452,14 +444,6 @@
                 "id": "657da388-24d3-47b2-8b77-cf5560bfa641",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
-            }
-        },
-        {
-            "Key": "cfd4dc07-b5e6-4da3-9ac9-158952462072",
-            "Value": {
-                "id": "f3638edc-f043-4ceb-9626-2889de5ae17c",
-                "resourcePath": "sounds\\sound1\\sound1.yy",
-                "resourceType": "GMSound"
             }
         },
         {
@@ -532,14 +516,6 @@
                 "id": "fb3e7c2c-6478-4a00-a073-6ac46b3122a3",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
-            }
-        },
-        {
-            "Key": "f897a26f-1cc0-4298-88b0-5f74039e4589",
-            "Value": {
-                "id": "aefa05f7-0353-4c3a-9ec6-49cebf80f210",
-                "resourcePath": "sounds\\sound0\\sound0.yy",
-                "resourceType": "GMSound"
             }
         },
         {

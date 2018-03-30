@@ -30,7 +30,8 @@ switch(state)
 			shoot_timer = cooldown;
 			with(instance_create_layer(gun_x + lengthdir_x(12,gun_rot),gun_y + lengthdir_y(12,gun_rot),"Instances",obj_bullet))
 			{
-				dir = other.gun_rot;	
+				dir = other.gun_rot;
+				dmg = other.dmg;
 			}
 		}
 		
@@ -62,7 +63,8 @@ switch(state)
 			shoot_timer = cooldown;
 			with(instance_create_layer(gun_x + lengthdir_x(12,gun_rot),gun_y + lengthdir_y(12,gun_rot),"Instances",obj_bullet))
 			{
-				dir = other.gun_rot;	
+				dir = other.gun_rot;
+				dmg = other.dmg;
 			}
 		}
 		

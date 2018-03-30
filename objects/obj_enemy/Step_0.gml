@@ -1,4 +1,9 @@
-/// @description Move away from other enemies
+/// @description Die
+
+if (hp <= 0) instance_destroy();
+
+
+
 /*
 var _x = x;
 x += 1000000;

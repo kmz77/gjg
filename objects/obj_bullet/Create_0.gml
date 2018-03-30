@@ -1,4 +1,4 @@
 /// @description Set speed
 
-spd = 6;
+spd = 12;
 alarm[0] = 1;

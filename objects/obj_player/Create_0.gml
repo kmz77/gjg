@@ -1,7 +1,8 @@
 /// @description Initialize variables
 spd = 2;
+dmg = 1;
 max_speed = 2;
-cooldown = 20;
+cooldown = 10;
 
 enum states
 {
