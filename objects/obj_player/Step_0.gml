@@ -80,6 +80,7 @@ switch(state)
 
 // Decrease cooldown
 shoot_timer = approach(shoot_timer,0,1);
+immune_timer = approach(immune_timer,0,1);
 
 // Set image_xscale
 if (mx > x + 5) image_xscale = 1;
@@ -87,9 +88,10 @@ else if (mx < x - 5) image_xscale = -1;
 
 
 // Collisions
+var d = point_direction(0,0,hsp,vsp);
 
 // Move horizontally
-x += hsp;
+if (hsp != 0) x += hsp//lengthdir_x(spd,d);
 
 // Right collisions
 if hsp > 0 {
@@ -108,7 +110,7 @@ if hsp > 0 {
 }
 
 // Move vertically
-y += vsp;
+if (vsp != 0) y += vsp//lengthdir_y(spd,d);
 
 // Vertical collisions
 if vsp > 0 {

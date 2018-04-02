@@ -1,7 +1,7 @@
 /// @description Enemy movement
 
 // Shooting
-if (shoot_timer == 0)
+if (shoot_timer == 0) && (ab_to_shoot) && (distance_to_object(obj_player) < 256)
 {
 	shoot_timer = shoot_cooldown+irandom_range(-10,10);
 	with(instance_create_layer(x,y,"Bullets",obj_enemy_bullet))

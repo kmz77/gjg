@@ -1,9 +1,9 @@
 /// @description Initialize variables
-spd = 3;
+spd = 2.25;//3; 
 dmg = 1;
 max_speed = 2;
 cooldown = 7;
-hp = 50;
+hp = 20;
 
 enum states
 {
@@ -12,6 +12,7 @@ enum states
 }
 
 hit = false;
+immune_timer = 0;
 state = states.idle;
 hsp = 0;
 vsp = 0;

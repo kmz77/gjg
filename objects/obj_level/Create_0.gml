@@ -105,7 +105,7 @@ for (var _y = 1; _y < height - 1; _y++)
 			var ex = _x*CELL_WIDTH + CELL_WIDTH/2;
 			var ey = _y*CELL_HEIGHT + CELL_HEIGHT/2;
 			// Spawn enemies
-			if (point_distance(ex,ey,obj_player.x,obj_player.y) > 128) && (chance(0.09))
+			if (point_distance(ex,ey,obj_player.x,obj_player.y) > 128) && (chance(0.07))
 			{
 				instance_create_layer(ex,ey,"Instances",obj_frog);
 			}
@@ -117,4 +117,4 @@ for (var _y = 1; _y < height - 1; _y++)
 		}
 	}
 }
-if (instance_number(obj_enemy) < 10) || (instance_number(obj_enemy) > 14) room_restart(); // clamp enemy amouunt
+if (instance_number(obj_enemy) < 8) || (instance_number(obj_enemy) > 11) room_restart(); // clamp enemy amouunt
