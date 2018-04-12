@@ -5,7 +5,7 @@
 event_inherited();
 
 cooldown = 0.3;
-spd = 1.125;
+spd = 1//.125;
 hp = 6;
 ab_to_shoot = true;
 

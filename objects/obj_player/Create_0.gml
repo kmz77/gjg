@@ -1,9 +1,10 @@
 /// @description Initialize variables
-spd = 2.25;//3; 
+spd = 2//2.25;//3; 
 dmg = 1;
 max_speed = 2;
 cooldown = 7;
 hp = 20;
+scraps = 0;
 
 enum states
 {

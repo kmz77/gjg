@@ -18,7 +18,7 @@ if (gun_rot > 60) && (gun_rot < 120)
 	}
 	else
 	{
-		draw_self();//draw_sprite_ext(sprite_index,image_index,floor(x),floor(y),image_xscale,1,0,c_white,1); // Draw self
+		draw_self();//draw_sprite_ext(sprite_index,image_index,round_n(x,1),round_n(y,1),image_xscale,1,0,c_white,1); // Draw self
 	}
 }
 else
@@ -30,7 +30,7 @@ else
 	}
 	else
 	{
-		draw_self();//draw_sprite_ext(sprite_index,image_index,floor(x),floor(y),image_xscale,1,0,c_white,1); // Draw self
+		draw_self();//draw_sprite_ext(sprite_index,image_index,round_n(x,1),round_n(y,1),image_xscale,1,0,c_white,1); // Draw self
 	}
 	draw_sprite_ext(spr_gun,0,gun_x,gun_y,xscale,1,draw_rot,c_white,1);
 }

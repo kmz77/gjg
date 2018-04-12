@@ -10,7 +10,7 @@ var gh = display_get_gui_height();
 draw_set_colour(c_black);
 draw_set_halign(fa_right);
 draw_set_valign(fa_bottom);
-var str = fps_real;//"Enemy count: " + string(instance_number(obj_enemy))
+var str = "scraps: " + string(obj_player.scraps) + "  Enemy count: " + string(instance_number(obj_enemy))
 draw_text(gw-10,gh-10,str);
 
 

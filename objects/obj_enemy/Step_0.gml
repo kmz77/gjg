@@ -4,9 +4,9 @@
 if (shoot_timer == 0) && (ab_to_shoot) && (distance_to_object(obj_player) < 256)
 {
 	shoot_timer = shoot_cooldown+irandom_range(-10,10);
-	with(instance_create_layer(x,y,"Bullets",obj_enemy_bullet))
+	with(instance_create_layer(x,y-9,"Bullets",obj_enemy_bullet))
 	{
-		dir = point_direction(x,y,obj_player.x,obj_player.y-9);
+		dir = point_direction(x,y-9,obj_player.x,obj_player.y-9);
 	}
 }
 

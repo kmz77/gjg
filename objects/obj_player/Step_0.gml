@@ -77,6 +77,13 @@ switch(state)
 		#endregion
 	} break;
 }
+// Pickup scraps
+var o = collision_rectangle(x-8,y-8,x+8,y+8,obj_scrap,false,false);
+if (o != -4)
+{
+	instance_destroy(o);
+	scraps += 1;
+}
 
 // Decrease cooldown
 shoot_timer = approach(shoot_timer,0,1);

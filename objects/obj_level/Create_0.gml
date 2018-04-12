@@ -110,11 +110,11 @@ for (var _y = 1; _y < height - 1; _y++)
 				instance_create_layer(ex,ey,"Instances",obj_frog);
 			}
 			// Spawn crates
-			if (point_distance(ex,ey,obj_player.x,obj_player.y) > 80) && (chance(0.05))
+			if (point_distance(ex,ey,obj_player.x,obj_player.y) > 80) && (chance(0.025))
 			{
 				instance_create_layer(ex,ey,"Instances",obj_crate);
 			}
 		}
 	}
 }
-if (instance_number(obj_enemy) < 8) || (instance_number(obj_enemy) > 11) room_restart(); // clamp enemy amouunt
+if (instance_number(obj_enemy) < 8) || (instance_number(obj_enemy) > 11) room_restart(); // clamp enemy amount
